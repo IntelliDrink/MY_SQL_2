@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intellidrink.my_sql_2" >
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".SelectQuery"
+            android:label="Custom Kiosk Command" >
+        </activity>
+
+        <!-- All Product Activity -->
+        <activity
+            android:name=".AllCustomers"
+            android:label="All Products" >
+        </activity>
+
+        <!-- Edit Product Activity -->
+        <activity
+            android:name=".CustomerTransactions"
+            android:label="Customer Transactions" >
+        </activity>
+    </application>
+
+</manifest>
